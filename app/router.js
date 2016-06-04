@@ -7,6 +7,9 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('coffee');
+  this.route('tables', function() {
+    this.route('table', { path: '/:table_id'});
+  });
 });
 
 export default Router;

@@ -1,0 +1,11 @@
+<h2>Table Index</h2>
+
+<ul>
+  {{#each model as |table|}}
+    {{#link-to 'tables.table' table }}
+      <li>Table {{table.id}} info</li>
+    {{/link-to}}
+  {{/each}}
+</ul>
+
+{{outlet}}
